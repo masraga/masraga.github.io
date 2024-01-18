@@ -1,0 +1,375 @@
+.black-theme {
+  background : #191c1e;
+}
+
+.body-text {
+  font-family: 'Raleway', sans-serif;
+  word-spacing: 1px;
+  font-size: 1.1em;
+  color: #d8d8d8;
+}
+
+.separator {
+  height: 1px;
+  width: 100%;
+  background-color: #777777;
+}
+
+.text-white {
+  color : #fff !important
+}
+
+.text-primary {
+  color: #7ff20c !important;
+}
+
+.section-title {
+  font-size: 1.8em;
+  font-weight: 500;
+  letter-spacing: .5px;
+}
+
+a {
+  color : #fff;
+}
+
+a:hover { 
+  color: #7ff20c;
+  text-decoration: none;
+}
+
+.k-btn {
+  padding : 8px 20px;
+  color : #fff;
+  font-weight: 500;
+  border-radius: 6px;
+}
+
+.k-btn:hover {
+  color: #7ff20c;
+  text-decoration: none;
+}
+
+.k-btn-primary {
+  border : 2px solid #7ff20c;
+  color: #7ff20c;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+  position: relative;
+}
+
+header > .header-menu {
+   display: none;
+}
+
+header > .header-menu > ul {
+  margin-top: 20px;
+}
+
+header > .header-menu > ul > li{
+  display: inline;
+  margin : 0 10px;
+}
+
+header > .header-menu > ul > li > a {
+  font-size:1.2em;
+}
+
+.header-menu-mobile {
+  background-color: #242a2b;
+  width: 60%;
+  padding : 10px;
+  margin: 0;
+  position: fixed;
+  height: 100vh;
+  right: -100%;
+  top: 0;
+  transition: right .2s;
+}
+
+.header-menu-mobile.open { 
+  right: 0;
+}
+
+.header-menu-mobile > a > .fa-xmark {
+  font-size: 1.5em;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.header-menu-mobile > .menu {
+  margin-top: 40px;
+  margin-left: 10px;
+}
+
+.header-menu-mobile > .menu > a{
+  display: block;
+  margin-bottom: 10px;
+  font-size: 1.2em;
+}
+
+header > .header-cta {
+  margin-top: 20px;
+}
+
+header > .header-cta > a:first-child{
+  display: none;
+}
+
+header > .header-cta > a > .fa-bars{
+  font-size: 1.8em;
+}
+
+.intro-section {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 60px;
+}
+
+.intro-section > .identity {
+  padding-top: 20px;
+}
+
+.intro-section > .identity > .name {
+  color: aqua;
+  font-size: 1.2em;
+}
+
+.intro-section > .identity > .role {
+  font-size: 2.5em;
+}
+
+.intro-section > .identity > .cta {
+  margin-top: 30px;
+}
+
+.intro-section > .identity > .cta > a:not(:last-child){
+  font-size: 1.5em;
+  margin-right: 20px;
+  display: none;
+}
+
+.intro-section > .sosmed-edge > a {
+  font-size: 1.7em;
+  display: block;
+  margin-bottom: 17px;
+}
+
+.intro-section > .profile-photo {
+  display: none;
+}
+
+.intro-section > .profile-photo > img {
+  width: 90%;
+}
+
+.services {
+  margin-top: 60px;
+  background-color: #242a2b; 
+  padding: 40px 10px;
+}
+
+.services > .container > .section-title {
+  color: #777777;
+}
+
+.service-item {
+  margin-top: 20px;
+  display: flex;
+}
+
+.service-item > .image > svg {
+  width: 100px;
+  padding-right: 20px;
+  margin-top: 6px;
+}
+
+.service-item > .description > .title {
+  font-size: 1.5em;
+  font-weight: 500;
+}
+
+.portfolio {
+  background-color: #1e2324;
+  padding: 40px 10px;
+}
+
+.portfolio > .container .portfolio-list > .portfolio-item  {
+  margin-top: 30px;  
+  display: flex;
+  justify-content: center;
+}
+
+.portfolio > .container .portfolio-list > .portfolio-item > a {
+  display: flex;
+  justify-content: center;
+}
+
+.portfolio > .container .portfolio-list > .portfolio-item > a > img {
+  height: 250px;
+  width: 400px;
+}
+
+.skill {
+  margin-top: 40px;
+}
+
+.skill > .skill-opening > div:first-child {
+  font-weight: 500;
+  font-size: 2.2em;
+  padding-bottom: 15px;
+}
+
+.skill-list {
+  margin-top: 50px;
+}
+
+.skill-list > .col-md-6 > .skill-item {
+  margin-bottom: 35px;
+}
+
+.skill-list > .col-md-6 > .skill-item > .label{
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.2em;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.skill-list > .col-md-6 > .skill-item > .percentage { 
+  position: relative;
+}
+
+.skill-list > .col-md-6 > .skill-item > .percentage > .field{
+  width: 100%;
+  height: 8px;
+  border-radius: 4px;
+  background-color: #242a2b;
+}
+
+.skill-list > .col-md-6 > .skill-item > .percentage > .value {
+  height: 8px;
+  border-radius: 4px;
+  background-color:#7ff20c;
+  position: absolute;
+  top: 0;
+}
+
+.footer {
+  
+}
+
+.footer > .container > .footer-opening{
+  font-size: 2.2em;
+  font-weight: 500;
+}
+
+.footer > .container > .footer-personal {
+  margin-top: 40px;
+}
+
+.footer > .container > .footer-personal > .footer-item {
+  display: flex;
+  margin: 15px 0;
+}
+.footer > .container > .footer-personal > .footer-item > .icon {
+  font-size: 1.5em;
+}
+
+.footer > .container > .footer-personal > .footer-item > .description > .label {
+  font-size: 1.4em;
+}
+.footer > .container > .footer-personal > .footer-item > .description > .value {
+  margin-left: 12px;
+  margin-top: 4px;
+}
+
+.designer {
+  color: #777;
+  text-align: right;
+  margin-top: 5px;
+}
+
+@media screen and (min-width : 640px){
+  
+  .intro-section > .identity > .name {
+    color: aqua;
+    font-size: 2.5em;
+  }
+  
+  .intro-section > .identity > .role {
+    font-size: 3.5em;
+  }
+}
+
+@media screen and (min-width : 996px){
+  .k-btn {
+    padding : 10px 20px;
+  }
+
+  header > .header-menu {
+    display: block;
+  }
+
+  header > .header-cta > a:first-child{
+    display: block;
+  }
+
+  header > .header-cta > a > .fa-bars {
+    display: none;
+  }
+
+  .intro-section > .sosmed-edge {
+    display: none;
+  }
+
+  .intro-section > .identity > .name {
+    color: aqua;
+    font-size: 2em;
+  }
+  
+  .intro-section > .identity > .role {
+    font-size: 5em;
+  }
+  
+  .intro-section > .identity > .cta {
+    margin-top: 30px;
+  }
+
+  .intro-section > .identity > .cta > a:not(:last-child) {
+    display: inline;
+  }
+
+  .intro-section > .profile-photo {
+    display: inline;
+  }
+
+  .services {
+    padding: 60px 10px;
+  }
+
+  .portfolio > .container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .portfolio > .container > .portfolio-title {
+    width: 30%;
+    margin-top: 15px;
+  }
+
+  .portfolio > .container .portfolio-list  {
+    width: 70%;
+  }
+
+  .footer > .container > .footer-personal {
+    display: flex;
+    justify-content: space-between;
+  }
+}
