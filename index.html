@@ -26,15 +26,14 @@
   </a></div>
   <div class="header-menu">
     <ul>
-      <!-- <li><a href="">Blog</a></li> -->
-      <!-- <li><a href="">Project</a></li>
-      <li><a href="">Services</a></li>
-      <li><a href="">Contact</a></li> -->
+      <li><a href="javascript:void(0)" id="service-button">Services</a></li>
+      <li><a href="javascript:void(0)" id="project-button">Project</a></li>
+      <li><a href="javascript:void(0)" id="contact-button">Contact</a></li>
     </ul>
   </div>
-  <div class="photo-profil">
+  <!-- <div class="photo-profil">
     <img src="" alt="">
-  </div>
+  </div> -->
   <div class="header-cta">
     <a href="https://linkedin.com/in/raga-mulia-kusuma-4191b71a0" target="blank" class="k-btn k-btn-primary">Get In Touch</a>
     <a href="javascript:void(0)" id="open-header-menu"><i class="fa-solid fa-bars"></i></a>
@@ -46,10 +45,9 @@
   <a href="javascript:void(0)"><i id="close-header-menu" class="fa-solid fa-xmark"></i></a>
 
   <div class="menu">
-    <!-- <a href="">Blog</a> -->
-    <!-- <a href="">Project</a>
-    <a href="">Services</a>
-    <a href="">Contact</a> -->
+    <a href="javascript:void(0)" id="service-button-mobile">Services</a>
+    <a href="javascript:void(0)" id="project-button-mobile">Project</a>
+    <a href="javascript:void(0)" id="contact-button-mobile">Contact</a>
   </div>
 </div>
 
@@ -81,7 +79,7 @@
   <!-- END : INTRO SECTION -->
   
   <!-- START : SERVICE SECTION -->
-  <div class="services">
+  <div class="services" id="service-container">
     <div class="container">
       <div class="section-title">Services</div>
   
@@ -127,7 +125,7 @@
   <!-- END : SERVICE SECTION -->
   
   <!-- START : PORTFOLIO SECTION -->
-  <div class="portfolio">
+  <div class="portfolio" id="project-container">
     <div class="container">
       <div class="section-title text-primary portfolio-title">Project</div>
       <div class="row portfolio-list">
@@ -277,7 +275,7 @@
 
 
 <!-- START : FOOTER SECTION -->
-<div class="services footer">
+<div class="services footer" id="contact-container">
   <div class="container text-white">
     <div class="footer-opening text-center">
       <div class="">Let's Discuss</div>
@@ -312,7 +310,7 @@
     <br>
   </div>
   <div class="separator"></div>
-  <div class="designer">Design by  <a href="https://masraga.github.io/">koderpedia</a></div>
+  <div class="designer">Design by  <a href="https://koderpedia.com">koderpedia</a></div>
 </div>
 <!-- END : FOOTER SECTION -->
 
@@ -326,6 +324,22 @@
   $("#close-header-menu").click(() => {
     $(".header-menu-mobile").removeClass("open");
   })
+
+  const animateScroll = (trigger, container) => {
+    $(trigger).click(function (){
+        $('html, body').animate({
+            scrollTop: $(container).offset().top
+        }, 300);
+    });
+  }
+
+  animateScroll("#service-button", "#service-container");
+  animateScroll("#project-button", "#project-container");
+  animateScroll("#contact-button", "#contact-container");
+  animateScroll("#service-button-mobile", "#service-container");
+  animateScroll("#project-button-mobile", "#project-container");
+  animateScroll("#contact-button-mobile", "#contact-container");
+
 </script>
 </body>
 </html>
