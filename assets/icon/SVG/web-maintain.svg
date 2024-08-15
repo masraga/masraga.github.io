@@ -1,0 +1,14 @@
+<svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="30" cy="30" r="30" fill="#282833"/>
+<mask id="path-2-inside-1_806_138" fill="white">
+<path d="M17.231 19C17.231 18.4477 17.6787 18 18.231 18H45.3079C45.8602 18 46.3079 18.4477 46.3079 19V39.5385H17.231V19Z"/>
+</mask>
+<path d="M17.231 19C17.231 18.4477 17.6787 18 18.231 18H45.3079C45.8602 18 46.3079 18.4477 46.3079 19V39.5385H17.231V19Z" fill="#EFAE19" stroke="#353543" stroke-width="4" mask="url(#path-2-inside-1_806_138)"/>
+<rect x="30.6929" y="39.5386" width="2.15385" height="2.69231" fill="#EFAE19"/>
+<path d="M31.7695 40.6152L37.8317 44.6537H25.7074L31.7695 40.6152Z" fill="#EFAE19"/>
+<circle cx="21.5" cy="41.5" r="1" fill="#EFAE19" stroke="#353543"/>
+<mask id="path-6-inside-2_806_138" fill="white">
+<rect x="14" y="25" width="15.0769" height="20.4615" rx="1"/>
+</mask>
+<rect x="14" y="25" width="15.0769" height="20.4615" rx="1" fill="#EFAE19" stroke="#353543" stroke-width="4" mask="url(#path-6-inside-2_806_138)"/>
+</svg>
