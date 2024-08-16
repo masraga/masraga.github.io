@@ -38,7 +38,7 @@
 </head>
 <body class="black-theme">
 
-<header>
+<header id="home">
   <div class="container menu">
     <div><h3 class="app-title text-white"><a href="">
       <img width="50" height="35" src="./assets/icon/koderpedia-no-bg.png" alt=""></h3>
@@ -46,9 +46,10 @@
     <ul class="menu-item">
       <li konimate-type="fade-left" konimate-delay=".1s"><a href="javascript:void(0)" id="service-button">Home</a></li>
       <li konimate-type="fade-left" konimate-delay=".2s"><a href="https://blog.koderpedia.com">Blog</a></li>
-      <li konimate-type="fade-left" konimate-delay=".3s"><a href="javascript:void(0)" id="service-button">Services</a></li>
-      <li konimate-type="fade-left" konimate-delay=".4s"><a href="javascript:void(0)" id="project-button">Project</a></li>
-      <li konimate-type="fade-left" konimate-delay=".5s"><a href="javascript:void(0)" id="contact-button">Contact</a></li>
+      <li konimate-type="fade-left" konimate-delay=".3s"><a href="javascript:void(0)" konimate-scroll="#service" id="service-button">Services</a></li>
+      <li konimate-type="fade-left" konimate-delay=".4s"><a href="javascript:void(0)" konimate-scroll="#project" id="project-button">Project</a></li>
+      <li konimate-type="fade-left" konimate-delay=".4s"><a href="javascript:void(0)" konimate-scroll="#testimonials" id="project-button">Testimonials</a></li>
+      <li konimate-type="fade-left" konimate-delay=".5s"><a href="javascript:void(0)" konimate-scroll="#footer" id="contact-button">Contact</a></li>
       <li id="konimate-menu" class="toggle-sidebar-button" konimate-button="show">
         <div></div>
         <div></div>
@@ -57,11 +58,12 @@
     </ul>
     <ul class="menu-item-mobile">
       <div><a href="javascript:void(0)" class="close-menu-button" konimate-button="hide" id="konimate-menu"><i class="fa-solid fa-xmark"></i></a></div>
-      <div konimate-type="fade-up" konimate-delay=".1s" konimate-for="#konimate-menu"><a href="">home</a></div>
-      <div konimate-type="fade-up" konimate-delay=".2s" konimate-for="#konimate-menu"><a href="">blog</a></div>
-      <div konimate-type="fade-up" konimate-delay=".3s" konimate-for="#konimate-menu"><a href="">service</a></div>
-      <div konimate-type="fade-up" konimate-delay=".4s" konimate-for="#konimate-menu"><a href="">project</a></div>
-      <div konimate-type="fade-up" konimate-delay=".5s" konimate-for="#konimate-menu"><a href="">contact</a></div>
+      <div konimate-type="fade-up" konimate-delay=".1s" konimate-for="#konimate-menu"><a href="javascript:void(0)" konimate-scroll="#home">home</a></div>
+      <div konimate-type="fade-up" konimate-delay=".2s" konimate-for="#konimate-menu"><a href="https://blog.koderpedia.com/">blog</a></div>
+      <div konimate-type="fade-up" konimate-delay=".3s" konimate-for="#konimate-menu"><a href="javascript:void(0)" konimate-scroll="#service">service</a></div>
+      <div konimate-type="fade-up" konimate-delay=".4s" konimate-for="#konimate-menu"><a href="javascript:void(0)" konimate-scroll="#project">project</a></div>
+      <div konimate-type="fade-up" konimate-delay=".4s" konimate-for="#konimate-menu"><a href="javascript:void(0)" konimate-scroll="#testimonials">testimonials</a></div>
+      <div konimate-type="fade-up" konimate-delay=".5s" konimate-for="#konimate-menu"><a href="javascript:void(0)" konimate-scroll="#footer">contact</a></div>
     </ul>
   </div>
   <div class="container person">
@@ -72,10 +74,10 @@
       <div class="motto text-white family-text" konimate-type="fade" konimate-delay=".2s">A software engineer with 3+ years experience in web development. Also the owner of <span class="text-secondary">koderpedia</span>. I’ll make your ideas come
       true.</div>
       <div class="cta">
-        <div konimate-type="fade-up" konimate-delay=".1s"><a href="" class="text-link"><i class="fa-brands fa-github"></i></a></div>
-        <div konimate-type="fade-up" konimate-delay=".2s"><a href="" class="text-link"><i class="fa-brands fa-linkedin"></i></a></div>
-        <div konimate-type="fade-up" konimate-delay=".3s"><a href="" class="text-link"><i class="fa-brands fa-facebook"></i></a></div>
-        <div konimate-type="fade-up" konimate-delay=".4s"><a href="" class="text-link"><i class="fa-brands fa-instagram"></i></a></div>
+        <div konimate-type="fade-up" konimate-delay=".1s"><a href="https://github.com/masraga" class="text-link"><i class="fa-brands fa-github"></i></a></div>
+        <div konimate-type="fade-up" konimate-delay=".2s"><a href="https://www.linkedin.com/in/raga-mulia-kusuma-4191b71a0/" class="text-link"><i class="fa-brands fa-linkedin"></i></a></div>
+        <div konimate-type="fade-up" konimate-delay=".3s"><a href="https://www.facebook.com/koderpedia/" class="text-link"><i class="fa-brands fa-facebook"></i></a></div>
+        <div konimate-type="fade-up" konimate-delay=".4s"><a href="https://www.instagram.com/koderpedia/" class="text-link"><i class="fa-brands fa-instagram"></i></a></div>
       </div>
     </div>
     <div class="image" konimate-type="fade"><div><img src="./assets/images/v2/raga.png" alt=""></div></div>
@@ -83,7 +85,7 @@
 </header>
 <main>
   <!-- start: service -->
-  <div class="services">
+  <div class="services" id="service">
     <div class="container">
       <div class="title text-white font-title font-weight-500">Why me ?</div>
       <!-- <div class="description text-black-300 font-text font-weight-300 family-text">Hiring me is a good choice. Because, you will get full package of modern tech</div> -->
@@ -120,7 +122,7 @@
   </div>
   <!-- end: service -->
   <!-- start: skill & project -->
-  <div class="project">
+  <div class="project" id="project">
     <div class="container">
       <div class="box">
         <div class="title font-title text-white font-weight-500">Related Skills</div>
@@ -168,7 +170,7 @@
   </div>
   <!-- end: skill & project -->
   <!-- start: testimonials-->
-  <div class="testimonials">
+  <div class="testimonials" id="testimonials">
     <div class="container">
       <div class="title font-title text-white font-weight-500">Testimonials</div>
       <div class="group-testimonials">
@@ -187,7 +189,7 @@
   </div>
   <!-- end: testimonials -->
   <!-- start: footer -->
-  <footer>
+  <footer id="footer">
     <div class="container">
       <div class="about">
         <div class="brand">
@@ -201,11 +203,12 @@
       </div>
       <div class="navigation">
         <div class="title">NAVIGATION</div>
-        <div><a href="">HOME</a></div>
-        <div><a href="">BLOG</a></div>
-        <div><a href="">SERVICES</a></div>
-        <div><a href="">PROJECT</a></div>
-        <div><a href="">CONTACT</a></div>
+        <div><a href="javascript:void(0)" konimate-scroll="#home">HOME</a></div>
+        <div><a href="https://blog.koderpedia.com/">BLOG</a></div>
+        <div><a href="javascript:void(0)" konimate-scroll="#service">SERVICES</a></div>
+        <div><a href="javascript:void(0)" konimate-scroll="#project">PROJECT</a></div>
+        <div><a href="javascript:void(0)" konimate-scroll="#testimonials">TESTIMONIALS</a></div>
+        <div><a href="javascript:void(0)" konimate-scroll="#footer">CONTACT</a></div>
       </div>
       <div class="identity">
         <div>
