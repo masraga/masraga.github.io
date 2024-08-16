@@ -2,11 +2,12 @@
   --white: #fff;
   --black-800: #282833;
   --black-700: #353543;
+  --black-600: #777777;
   --black-300: #9B9BB1;
   --orange-800: #EFAE19;
   --font-link: .95rem;
-  --font-text: 1.15rem;
-  --font-cite: 1rem;
+  --font-text: 1.12rem;
+  --font-cite: .9rem;
   --font-title: 1.8rem;
   --font-subtitle: 1.3rem;
   --family-text: 'Open-Sans', sans-serif;
@@ -21,6 +22,31 @@
 
 body {
   background-color: var(--black-800);
+}
+.separator {
+  width: 100%;
+  height: 1px;
+  background-color: var(--black-600);
+}
+.card {
+  position: relative;
+  cursor: pointer;
+}
+.card>.card-header {
+  width: 100%;
+}
+.card>.card-header>img {
+  max-width: 100%;
+  display: block;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.card>.card-body {
+  font-weight: 300;
+  padding: 15px;
+}
+.card>.card-body>*{
+  margin-bottom: 10px;
 }
 .family-text {
   font-family: var(--family-text);
@@ -46,7 +72,9 @@ body {
 .font-cite {
   font-size: var(--font-cite);
 }
-
+.text-center{
+  text-align: center;
+}
 .text-secondary {
   color: var(--orange-800);
 }
@@ -215,9 +243,10 @@ header>.person>.image {
 header>.person>.image>div>img {
   width: 300px;
   height: auto;
+
 }
-main{
-  padding: 120px 0;
+main>.services{
+  margin-top: 120px;
 }
 main>.services>.container>.box {
   margin-top: 40px;
@@ -289,6 +318,83 @@ main>.project>.container>.box>.group-content>.card-inline>.card-content>.descrip
   line-height: 30px;
   margin-top: 5px;
 }
+main>.testimonials{
+  margin-top: 120px;
+}
+main>.testimonials>.container>.title {
+  margin-bottom: 30px;
+}
+main>.testimonials>.container>.group-testimonials {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+main>.testimonials>.container>.group-testimonials>.card{
+  width: 380px;
+  margin: 10px;
+  background-color: var(--black-700);
+  border-radius: 10px;
+}
+footer {
+  margin-top: 120px;
+  padding: 60px 0;
+  background-color: var(--black-700);
+}
+footer>.container {
+  display: flex;
+  justify-content: space-between;
+}
+footer>.container>div:first-child{
+  width: 30%;
+}
+footer>.container>.about>.brand{
+  display: flex;
+}
+footer>.container>.about>.brand>.text{
+  margin-left: 15px;
+  margin-top: 2px;
+}
+footer>.container>.about>.brand>.text>a {
+  font-size: var(--font-title);
+}
+footer>.container>.about>.description{
+  line-height: 25px;
+  margin-top: 20px;
+  color: var(--black-300);
+}
+footer>.container>.navigation>.title{
+  color: var(--black-300);
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+footer>.container>.navigation>div:not(.title){
+  margin-top: 10px;
+}
+footer>.container>.navigation>div:not(.title)>a{
+  font-weight: 300 !important;
+  color: var(--black-300) !important;
+}
+footer>.container>.navigation>div:not(.title)>a:hover {
+  color: var(--orange-800) !important;
+}
+footer>.container>.identity>div{
+  margin-bottom: 20px;
+}
+footer>.container>.identity>div {
+  color: var(--black-300);
+}
+footer>.container>.identity>div>i {
+  margin-right: 10px;
+}
+footer>.container>.identity>div>a{
+  font-weight: 300;
+  text-transform: lowercase;
+  color: var(--black-300);
+}
+footer>.separator {
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
 
 @media screen and (max-width: 840px){
   header>.menu>.menu-item>li:not(:last-child) {
@@ -332,5 +438,26 @@ main>.project>.container>.box>.group-content>.card-inline>.card-content>.descrip
   main>.project>.container>.box:nth-child(3){
     margin-top: 120px;
     margin-left: 0;
+  }
+  main>.testimonials>.container>.title{
+    text-align: center;
+  }
+  main>.testimonials>.container>.group-testimonials {
+    display: block;
+  }
+  main>.testimonials>.container>.group-testimonials>.card{
+    width: 100%;
+    margin-top: 20px;
+    background-color: var(--black-700);
+    border-radius: 10px;
+  }
+  footer>.container {
+    display: block;
+  }
+  footer>.container>div:first-child{
+    width: 100%;
+  }
+  footer>.container>div {
+    margin-bottom: 30px;
   }
 }
