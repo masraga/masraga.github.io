@@ -148,6 +148,7 @@ header > .menu > .menu-item-mobile {
   top: 0;
   bottom: 0;
   /* padding: 20px; */
+  z-index: 1;
 }
 header>.menu>.menu-item-mobile>div:first-child{
   text-align: right;
