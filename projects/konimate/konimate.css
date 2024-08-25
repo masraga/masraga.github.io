@@ -56,7 +56,7 @@ header>.container>.menu>div>a {
   color: var(--yellow-700);
   font-size: .9rem;
 }
-header>.container>.menu>div{
+header>.container>.menu{
   display: flex;
   gap: 15px;
 }
