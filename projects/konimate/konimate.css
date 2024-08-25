@@ -56,6 +56,10 @@ header>.container>.menu>div>a {
   color: var(--yellow-700);
   font-size: .9rem;
 }
+header>.container>.menu>div{
+  display: flex;
+  gap: 15px;
+}
 header>.motto {
   text-transform: uppercase;
   width: 45% !important;
