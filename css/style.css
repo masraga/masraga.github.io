@@ -256,6 +256,7 @@ main>.services>.container>.box {
   margin-top: 40px;
   display: flex;
   justify-content: space-between;
+  gap: 10px;
 }
 main>.services>.container>.box>.card {
   background-color: var(--black-700);
