@@ -1,0 +1,798 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="..">
+      
+      
+        <link rel="next" href="../api-ref/">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.12">
+    
+    
+      
+        <title>Pembayaran - Labayar</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.2afb09e1.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#pembayaran" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Labayar" class="md-header__button md-logo" aria-label="Labayar" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Labayar
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Pembayaran
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Labayar" class="md-nav__button md-logo" aria-label="Labayar" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Labayar
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Pembayaran
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Pembayaran
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#pengaturan" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pengaturan
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#invoice-manual-cash" class="md-nav__link">
+    <span class="md-ellipsis">
+      Invoice manual (cash)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#invoice-payment-gateway" class="md-nav__link">
+    <span class="md-ellipsis">
+      Invoice payment gateway
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pembayaran-invoice-manual" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pembayaran invoice (manual)
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api-ref/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Referensi API
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../about/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Tentang
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#pengaturan" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pengaturan
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#invoice-manual-cash" class="md-nav__link">
+    <span class="md-ellipsis">
+      Invoice manual (cash)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#invoice-payment-gateway" class="md-nav__link">
+    <span class="md-ellipsis">
+      Invoice payment gateway
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pembayaran-invoice-manual" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pembayaran invoice (manual)
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="pembayaran">Pembayaran</h1>
+<p>Labayar mendukung beberapa pembayaran, diantaranya:</p>
+<ul>
+<li>Pembayaran tunai di kasir</li>
+<li>Pembayaran menggunakan tripay payment gateway</li>
+</ul>
+<h2 id="pengaturan">Pengaturan</h2>
+<p>Tambahkan satu controller <strong>PaymentContorller</strong></p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>php<span class="w"> </span>artisan<span class="w"> </span>make:controller<span class="w"> </span>PaymentController
+</code></pre></div></td></tr></table></div>
+<p>Lalu tambahkan satu fungsi yang nantinya akan kita gunakan sebagai action untuk membuat invoice</p>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">app/Http/Controllers/PaymentController.php</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span>
+<span class="normal">8</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="x">use Koderpedia\Labayar\Payment;</span>
+<span class="x">class PaymentController extends Controller</span>
+<span class="x">{</span>
+<span class="x">    public function createInvoice(Request $request)</span>
+<span class="x">    {</span>
+<span class="x">        // disini nantinya kita akan menambahkan logika untuk membuat invoice</span>
+<span class="x">    }</span>
+<span class="x">}</span>
+</code></pre></div></td></tr></table></div>
+<p>Tambahkan satu <strong>view</strong> dengan nama <strong>chasier.blade.php</strong> untuk kebutuhan generate invoice. halaman ini hanya contoh, kamu dapat mengembangkan sesuka kamu. Halaman ini hanya akan menyajikan field wajib yang harus berikan ketika ingin generate invoice.</p>
+<p>Tampilkan views tersebut ke browser</p>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">routes/web.php</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="x">Route::get(&#39;/&#39;, function () {</span>
+<span class="x">  return view(&#39;chasier&#39;);</span>
+<span class="x">});</span>
+</code></pre></div></td></tr></table></div>
+<p>didalam view <strong>chasier.blade.php</strong> kamu bisa menambahkan potongan kode dibawah ini</p>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">resources/views/chasier.blade.php</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span>
+<span class="normal">24</span>
+<span class="normal">25</span>
+<span class="normal">26</span>
+<span class="normal">27</span>
+<span class="normal">28</span>
+<span class="normal">29</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="x">&lt;form action=&quot;/invoice/generate&quot; method=&quot;post&quot;&gt;</span>
+<span class="x">  @csrf</span>
+<span class="x">  &lt;fieldset&gt;</span>
+<span class="x">    &lt;legend&gt;Customer&lt;/legend&gt;</span>
+<span class="x">    &lt;label for=&quot;&quot;&gt;Nama customer&lt;/label&gt;&lt;br&gt;</span>
+<span class="x">    &lt;input type=&quot;text&quot; name=&quot;customerName&quot; value=&quot;Raga mulia kusuma&quot;&gt;&lt;br&gt;</span>
+<span class="x">    &lt;label for=&quot;&quot;&gt;Telepon customer&lt;/label&gt;&lt;br&gt;</span>
+<span class="x">    &lt;input type=&quot;text&quot; name=&quot;customerPhone&quot; value=&quot;081234567890&quot;&gt;&lt;br&gt;</span>
+<span class="x">    &lt;label for=&quot;&quot;&gt;Email customer&lt;/label&gt;&lt;br&gt;</span>
+<span class="x">    &lt;input type=&quot;text&quot; name=&quot;customerEmail&quot; value=&quot;real.ragamulia@gmail.com&quot;&gt;&lt;br&gt;</span>
+<span class="x">  &lt;/fieldset&gt;</span>
+<span class="x">  &lt;fieldset&gt;</span>
+<span class="x">    &lt;legend&gt;Pesanan&lt;/legend&gt;</span>
+<span class="x">    &lt;label for=&quot;&quot;&gt;ID produk&lt;/label&gt;&lt;br&gt;</span>
+<span class="x">    &lt;input type=&quot;text&quot; name=&quot;productId[]&quot; value=&quot;product123&quot; readonly&gt;&lt;br&gt;</span>
+<span class="x">    &lt;label for=&quot;&quot;&gt;Nama produk&lt;/label&gt;&lt;br&gt;</span>
+<span class="x">    &lt;input type=&quot;text&quot; name=&quot;productName[]&quot; value=&quot;Jeruk bali asli&quot; readonly&gt;&lt;br&gt;</span>
+<span class="x">    &lt;label for=&quot;&quot;&gt;Jumlah beli&lt;/label&gt;&lt;br&gt;</span>
+<span class="x">    &lt;input type=&quot;number&quot; name=&quot;productQty[]&quot; value=&quot;2&quot; readonly&gt;&lt;br&gt;</span>
+<span class="x">    &lt;label for=&quot;&quot;&gt;Harga satuan&lt;/label&gt;&lt;br&gt;</span>
+<span class="x">    &lt;input type=&quot;number&quot; name=&quot;productPrice[]&quot; value=&quot;10000&quot; readonly&gt;&lt;br&gt;</span>
+<span class="x">  &lt;/fieldset&gt;</span>
+<span class="x">  &lt;fieldset&gt;</span>
+<span class="x">    &lt;legend&gt;Jumlah bayar&lt;/legend&gt;</span>
+<span class="x">    &lt;div&gt;* jumlah bayar hanya bisa digunakan untuk jenis pembayaran langsung (cash)&lt;/div&gt;</span>
+<span class="x">    &lt;input type=&quot;number&quot; name=&quot;payAmount&quot; value=&quot;30000&quot; readonly&gt;</span>
+<span class="x">  &lt;/fieldset&gt;</span>
+<span class="x">  &lt;button type=&quot;submit&quot;&gt;Bayar&lt;/button&gt;</span>
+<span class="x">&lt;/form&gt;</span>
+</code></pre></div></td></tr></table></div>
+<p>Perhatikan pada tag <strong>form</strong>, disana ada attribute <strong>method</strong> dan <strong>action</strong>. Pada bagian method, kamu bisa isi dengan <strong>POST</strong> dan action <strong>/invoice/generate</strong>. Lalu kamu bisa kembali ke web router, dan menambahkan potongan kode ini</p>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">routes/web.php</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="x">use App\Http\Controllers\PaymentController;</span>
+<span class="x">Route::post(&quot;/invoice/generate&quot;, [PaymentController::class, &quot;createInvoice&quot;]);</span>
+</code></pre></div></td></tr></table></div>
+<p>Kembali ke controller <strong>PaymentController</strong> dan pada method <strong>createInvoice</strong> kamu bisa tambahan logika untuk memproses seluruh inputan dari <strong>chasier.blade.php</strong></p>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">app/Http/Controllers/PaymentController.php</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span>
+<span class="normal">24</span>
+<span class="normal">25</span>
+<span class="normal">26</span>
+<span class="normal">27</span>
+<span class="normal">28</span>
+<span class="normal">29</span>
+<span class="normal">30</span>
+<span class="normal">31</span>
+<span class="normal">32</span>
+<span class="normal">33</span>
+<span class="normal">34</span>
+<span class="normal">35</span>
+<span class="normal">36</span>
+<span class="normal">37</span>
+<span class="normal">38</span>
+<span class="normal">39</span>
+<span class="normal">40</span>
+<span class="normal">41</span>
+<span class="normal">42</span>
+<span class="normal">43</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="x">use Koderpedia\Labayar\Payment;</span>
+<span class="x">class PaymentController extends Controller</span>
+<span class="x">{</span>
+<span class="x">    public function createInvoice(Request $request)</span>
+<span class="x">    {</span>
+<span class="x">        /**</span>
+<span class="x">         * ID unik untuk setiap data invoice, kamu bisa mengkreasikan dengan ID mu sendiri</span>
+<span class="x">        */</span>
+<span class="x">        $orderId = &quot;inv-0001&quot;;</span>
+<span class="x">        $customer = [</span>
+<span class="x">          &quot;name&quot; =&gt; $request-&gt;customerName,</span>
+<span class="x">          &quot;phone&quot; =&gt; $request-&gt;customerPhone,</span>
+<span class="x">          &quot;email&quot; =&gt; $request-&gt;customerEmail,</span>
+<span class="x">        ];</span>
+<span class="x">        $amount = $request-&gt;payAmount;</span>
+<span class="x">        $items = [];</span>
+<span class="x">        for ($i = 0; $i &lt; count($request-&gt;productId); $i++) {</span>
+<span class="x">          $items[] = [</span>
+<span class="x">            &quot;productId&quot; =&gt; $request-&gt;productId[$i],</span>
+<span class="x">            &quot;price&quot; =&gt; $request-&gt;productPrice[$i],</span>
+<span class="x">            &quot;quantity&quot; =&gt; $request-&gt;productQty[$i],</span>
+<span class="x">            &quot;name&quot; =&gt; $request-&gt;productName[$i],</span>
+<span class="x">          ];</span>
+<span class="x">        }</span>
+<span class="x">        /**</span>
+<span class="x">         * Digunakan untuk mengatur batas jatuh tempo pembayaran. Untuk key unit kamu bisa memasukkan * minutes/hours/days</span>
+<span class="x">        */</span>
+<span class="x">        $expiry = [</span>
+<span class="x">          &quot;unit&quot; =&gt; &quot;minutes&quot;,</span>
+<span class="x">          &quot;duration&quot; =&gt; 60</span>
+<span class="x">        ];</span>
+
+<span class="x">        $payload = [</span>
+<span class="x">          &quot;orderId&quot; =&gt; $orderId,</span>
+<span class="x">          &quot;customer&quot; =&gt; $customer,</span>
+<span class="x">          &quot;items&quot; =&gt; $items,</span>
+<span class="x">          &quot;expiry&quot; =&gt; $expiry,</span>
+<span class="x">          &quot;payAmount&quot; =&gt; $amount</span>
+<span class="x">        ];</span>
+
+<span class="x">        //Inisiasi logika pembayaran disini</span>
+<span class="x">    }</span>
+<span class="x">}</span>
+</code></pre></div></td></tr></table></div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+</div>
+<p>Perhatikan variable <strong>$payload</strong>, untuk pembayaran dengan payment gateway kamu tidak perlu mengirimkan data <strong>payAmount</strong></p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+</div>
+<p>Pada dasarnya untuk setiap data yang dikirim untuk generate invoice adalah sama, jadi kamu bisa menggunakan <strong>$payload</strong> yang sama untuk generate invoice manual / payment gateway</p>
+<h2 id="invoice-manual-cash">Invoice manual (cash)</h2>
+<p>Buka controller <strong>PaymentController</strong> dan tambahkan potongan kode dibawah ini:</p>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">app/Http/Controllers/PaymentController.php</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="x">use Koderpedia\Labayar\Payment;</span>
+<span class="x">class PaymentController extends Controller</span>
+<span class="x">{</span>
+<span class="x">    public function createInvoice(Request $request)</span>
+<span class="x">    {</span>
+<span class="x">        ...</span>
+<span class="x">        //Inisiasi logika pembayaran disini</span>
+<span class="x">        $payment = new Payment();</span>
+<span class="x">        $payment-&gt;createInvoice($payload);</span>
+<span class="x">        // redirect</span>
+<span class="x">    }</span>
+<span class="x">}</span>
+</code></pre></div></td></tr></table></div>
+<h2 id="invoice-payment-gateway">Invoice payment gateway</h2>
+<p>Untuk pembayaran payment gateway ini, kamu hanya perlu menbamhahkan satu parameter pada instance <strong>Payment</strong>.</p>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">app/Http/Controllers/PaymentController.php</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="x">use Koderpedia\Labayar\Payment;</span>
+<span class="x">class PaymentController extends Controller</span>
+<span class="x">{</span>
+<span class="x">    public function createInvoice(Request $request)</span>
+<span class="x">    {</span>
+<span class="x">        ...</span>
+<span class="x">        //Inisiasi logika pembayaran disini</span>
+<span class="x">        $payment = new Payment(&quot;tripay&quot;);</span>
+<span class="x">        $payment-&gt;createInvoice($payload);</span>
+<span class="x">        // redirect</span>
+<span class="x">    }</span>
+<span class="x">}</span>
+</code></pre></div></td></tr></table></div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+</div>
+<p>Kamu bisa menambahkan payment gateway tripay hanya dengan menambahkan satu parameter <strong>tripay</strong>. Ini berlaku untuk payment gateway lainnya, hanya saja untuk saat ini, labayar hanya mendukung payment gateway tripay.</p>
+<p>Sejauh ini kamu sudah berhasil melakukan generate invoice di sistem. Kamu bisa check di database pada table <strong>labayar_invoices</strong>, maka akan terdefinisi satu record baru.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+</div>
+<p>Jika kamu tidak ingin membuat halaman order sendiri, kamu bisa menggunakan halaman order bawaan dari labayar, dengan melakukan redirect ke api labayar</p>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">app/Http/Controllers/PaymentController.php</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="x">use Koderpedia\Labayar\Payment;</span>
+<span class="x">class PaymentController extends Controller</span>
+<span class="x">{</span>
+<span class="x">    public function createInvoice(Request $request)</span>
+<span class="x">    {</span>
+<span class="x">        ...</span>
+<span class="x">        // redirect</span>
+<span class="x">        return redirect(&quot;/api/labayar/orders&quot;);</span>
+<span class="x">    }</span>
+<span class="x">}</span>
+</code></pre></div></td></tr></table></div>
+<h2 id="pembayaran-invoice-manual">Pembayaran invoice (manual)</h2>
+<p>Kamu bisa melunasi pembayaran dengan metode tunai / payment gateway dengan hanya satu fungsi. Pada controller <strong>PaymentController</strong> kamu bisa menambahkan</p>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">app/Http/Controllers/PaymentController.php</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="x">use Koderpedia\Labayar\Payment;</span>
+<span class="x">class PaymentController extends Controller</span>
+<span class="x">{</span>
+<span class="x">    public function payInvoice(Request $request)</span>
+<span class="x">    {</span>
+<span class="x">        $paymentId = &quot;inv-00001-123234&quot;; // kamu bisa mendapatkan data ini dari table mysql labayar_invoice_payments field orderId</span>
+<span class="x">        $amount = 40000; // jumlah ini harus &gt;= nett total invoice</span>
+<span class="x">        return Payment::pay(compact(&quot;paymentId&quot;, &quot;amount&quot;))</span>
+<span class="x">    }</span>
+<span class="x">}</span>
+</code></pre></div></td></tr></table></div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+</div>
+<p>Untuk payment gateway fungsi pembayaran invoice ini tidak wajib, karena invoice akan otomatis lunas, ketika invoice dibayar menggunakan metode bayar dari payment gateway</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "..", "features": ["content.code.copy", "content.code.annotate"], "search": "../assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.c8b220af.min.js"></script>
+      
+    
+  </body>
+</html>
