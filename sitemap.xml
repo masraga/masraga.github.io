@@ -18,5 +18,10 @@
   <priority>0.8</priority>
 </url>
 
+<url>
+  <loc>https://koderpedia.com/docs/labayar</loc>
+  <priority>0.8</priority>
+  <lastmod>2025-03-16T04:55:45+00:00</lastmod>
+</url>
 
 </urlset>
