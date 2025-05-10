@@ -680,7 +680,7 @@
 <span class="x">        ...</span>
 <span class="x">        //Inisiasi logika pembayaran disini</span>
 <span class="x">        $payment = new Payment(&quot;tripay&quot;);</span>
-<span class="x">        $payment-&gt;createInvoice($payload);</span>
+<span class="x">        return $payment-&gt;UISnapLabayar($payload);</span>
 <span class="x">        // redirect</span>
 <span class="x">    }</span>
 <span class="x">}</span>
